@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__left">
+          <a href="/" class="logo">
+            <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+          </a>
+          <div class="header__location">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Самара</span>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__contacts">
+            <div class="header__phone-wrap">
+              <span class="header__phone-label">Звоните пн-пт: 9-18</span>
+              <a href="tel:88000000000" class="header__phone"
+                >8-000-000-00-00</a
+              >
+            </div>
+            <div class="header__socials">
+              <a href="#" class="social social--tg" aria-label="Telegram">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#telegram" />
+                </svg>
+              </a>
+              <a href="#" class="social social--wa" aria-label="WhatsApp">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#whatsapp" />
+                </svg>
+              </a>
+              <a href="#" class="social social--vb" aria-label="Viber">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#viber" />
+                </svg>
+              </a>
+            </div>
+            <a href="#callback" class="header__callback">ПЕРЕЗВОНИТЕ МНЕ</a>
+          </div>
+          <!-- <button class="burger btn-reset" aria-label="Меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__nav">
+    <div class="container">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link--active"
+            >РЕМОНТ <span class="nav__plus">+</span></a
+          >
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">ДИЗАЙН</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПОРТФОЛИО</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПАРТНЁРАМ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">БЛОГ</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <main class="main">
+      <section class="about-hero">
+  <div class="about-hero__bg">
+    <img src="img/about/hero-bg.jpg" alt="" />
+    <div class="about-hero__overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="about-hero__inner">
+      <p class="about-hero__breadcrumb">
+        <a href="index.html">Главная</a> / О компании
+      </p>
+      <h1 class="about-hero__title">О компании Сота</h1>
+      <p class="about-hero__desc">
+        Строительная компания полного цикла. Работаем с 2015 года,<br />
+        реализовали более 200 объектов в Самаре и области.
+      </p>
+      <a href="#callback" class="about-hero__btn">Начать сотрудничество</a>
+    </div>
+  </div>
+</section>
+
+      <section class="about-stats">
+  <div class="container">
+    <div class="about-stats__inner">
+
+      <!-- Левая колонка: заголовок + описание + счётчики -->
+      <div class="about-stats__left">
+        <h2 class="about-stats__title">
+          <span class="about-stats__title--green">Реализовали более 200 ремонтов</span><br />
+          квартир, домов и коммерческих объектов
+        </h2>
+
+        <p class="about-stats__desc">
+          За 10 лет работы мы выстроили прозрачные процессы, собрали команду
+          профессионалов и помогли сотням семей въехать в обновлённые квартиры.
+          Каждый проект — это фиксированная цена, контроль и гарантия результата.
+        </p>
+
+        <div class="about-stats__counters">
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="200">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Реализованных<br />ремонтов</p>
+          </div>
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="150">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Довольных<br />клиентов</p>
+          </div>
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="200">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Реализованных<br />фото</p>
+          </div>
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="50">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Специалистов<br />в команде</p>
+          </div>
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="10">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Лет на<br />рынке</p>
+          </div>
+          <div class="about-stats__counter">
+            <span class="about-stats__num js-counter" data-target="200">000</span>
+            <span class="about-stats__plus">+</span>
+            <p class="about-stats__label">Реализованных<br />фактов</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правая колонка: фото -->
+      <div class="about-stats__right">
+        <div class="about-stats__photo">
+          <img src="img/about/interior.jpg" alt="Интерьер" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Ценность -->
+  <div class="about-value">
+    <div class="about-value__hex-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about-value__inner">
+        <h2 class="about-value__title">
+          Наша ключевая ценность —<br />честный и профессиональный подход
+        </h2>
+        <p class="about-value__desc">
+          Мы никогда не скрываем стоимость и не меняем цену после подписания договора.
+          Работаем с уважением к клиенту, его времени и деньгам. Это и есть Сота.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq">
+  <div class="container">
+    <div class="faq__inner">
+      <div class="faq__content">
+        <h2 class="faq__title">У НАС ЧАСТО СПРАШИВАЮТ</h2>
+        <div class="faq__list">
+          <div class="faq__item is-active">
+            <button class="btn-reset faq__question">
+              <span>Как рассчитывается стоимость ремонта моей квартиры?</span>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.9922 2.02539V13.3586C15.9922 14.4632 16.8876 15.3586 17.9922 15.3586H28.9551"
+                  stroke="#63E293"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2.20312 15.7207H13.166C14.2706 15.7207 15.166 16.6161 15.166 17.7207V29.0539"
+                  stroke="#63E293"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Стоимость ремонта рассчитывается индивидуально для каждого
+                проекта. Мы проводим замеры, обсуждаем задачи и составляем
+                подробную смету. Окончательная сумма фиксируется договором и
+                после этого не выходит за рамки сметы. Помимо ремонта квартиры
+                вы можете заказать у нас производство мебели и даже поставку
+                бытовой техники.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq__form-wrap">
+        <form action="#" class="faq__form">
+          <h3 class="faq__form-title">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+          <p class="faq__form-desc">
+            Получите консультацию от специалиста компании Сота
+          </p>
+
+          <div class="faq__form-inputs">
+            <input type="text" class="faq__input" placeholder="Имя*" required />
+            <input
+              type="tel"
+              class="faq__input"
+              placeholder="Телефон*"
+              required
+            />
+          </div>
+
+          <label class="faq__agree">
+            <input type="checkbox" class="faq__checkbox" checked required />
+            <span class="faq__agree-text"
+              >Отправляя данные вы соглашаетесь с политикой
+              конфиденциальности</span
+            >
+          </label>
+
+          <button type="submit" class="btn-reset faq__submit">
+            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div id="map" class="contacts__map">
+    <img src="../img/map.webp" alt="" />
+  </div>
+  <div class="container">
+    <div class="contacts__info">
+      <h2 class="contacts__title">ОФИС В САМАРЕ</h2>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+              stroke="#63E293"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>г. Самара, улица Садовая, 291</span>
+        </div>
+        <div class="contacts__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 8V12L15 15"
+              stroke="#63E293"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="12" cy="12" r="9" stroke="#63E293" stroke-width="1.5" />
+          </svg>
+          <div>
+            <p>Режим работы:</p>
+            <p>Пн-Пт 09:00 — 18:00. Сб-Вс: выходной</p>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M22 16.92V19.92C22 20.4723 21.7893 21.002 21.4142 21.3771C21.0391 21.7522 20.5094 21.9629 19.9571 21.9629C17.5135 21.9629 15.17 21.2439 13.18 19.8829C11.3314 18.6309 9.75904 17.0586 8.50704 15.21C7.14604 13.22 6.42704 10.8765 6.42704 8.43294C6.42704 7.88064 6.63774 7.35094 7.01284 6.97584C7.38794 6.60074 7.91764 6.39004 8.46994 6.39004H11.4699C11.9476 6.38514 12.4112 6.55334 12.7751 6.86354C13.139 7.17374 13.3775 7.60444 13.4469 8.07594C13.5769 9.02394 13.8089 9.95594 14.1399 10.8529C14.2735 11.2156 14.303 11.6095 14.225 11.9891C14.147 12.3687 13.9649 12.718 13.6999 12.9979L12.4299 14.2679C13.5835 16.2975 15.2524 17.9664 17.282 19.12L18.552 17.85C18.8319 17.585 19.1812 17.4029 19.5608 17.3249C19.9404 17.2469 20.3343 17.2764 20.697 17.41C21.594 17.741 22.526 17.973 23.474 18.103C23.9506 18.1731 24.3851 18.4161 24.694 18.7854C25.0029 19.1547 25.1641 19.6245 25.1469 20.1049V23.1049"
+              stroke="#63E293"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div>
+            <p>Телефон:</p>
+            <a href="tel:+79270093030">+7 927 009-30-30</a>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+              stroke="#63E293"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 6L12 13L2 6"
+              stroke="#63E293"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div>
+            <p>Электронная почта:</p>
+            <a href="mailto:info@k5remont.ru">info@k5remont.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container">
+    <div class="reviews__top">
+      <h2 class="title__section">
+        Отзывы<br />
+        <span>про нашу работу</span>
+      </h2>
+      <a href="#" class="reviews__leave-btn">ОСТАВИТЬ ОТЗЫВ</a>
+    </div>
+
+    <!-- Video reviews -->
+    <div class="reviews__video-list">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-1.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-2.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-3.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-4.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+    </div>
+
+    <!-- Ratings bar -->
+    <div class="reviews__ratings">
+      <div class="reviews__ratings-left">
+        <span class="reviews__ratings-label">Все отзывы</span>
+        <div class="reviews__rating-item">
+          <svg class="reviews__yandex-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#FC3F1D"/>
+            <text x="12" y="16" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Я</text>
+          </svg>
+          <div class="reviews__stars">
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+          </div>
+          <span class="reviews__score">4.8</span>
+        </div>
+        <div class="reviews__rating-item">
+          <svg class="reviews__google-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#fff"/>
+            <text x="12" y="16" text-anchor="middle" fill="#4285F4" font-size="12" font-weight="bold">G</text>
+          </svg>
+          <div class="reviews__stars">
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+          </div>
+          <span class="reviews__score">4.9</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text reviews -->
+    <div class="reviews__text-list">
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">А</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Анатолий X.</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">4 мая 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Отдельный вопрос для размещения отзывов на сайте обязательно нужно. Главный переход от сайта к платформе для просмотра отзывов.</p>
+        <span class="reviews__platform">Отзыв от Яндекс</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">О</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Олеся B.</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">2 мая 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Хороший вариант с отзывами. Сами обновляются по всей платформе и на сайте отдельно обновить.</p>
+        <span class="reviews__platform">Отзыв от Google</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">А</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Алла Макарова</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">29 апр 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Самый лучший сервис!</p>
+        <span class="reviews__platform">Отзыв от Яндекс</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar reviews__avatar--purple">D</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Dmitry Igoshin</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">18 мар 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Отличный вариант! Именно то, что надо. Много источников отзывов. Дизайн адаптивный.</p>
+        <span class="reviews__platform">Отзыв от Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <a href="/" class="logo footer__logo">
+          <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list list-reset">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ КВАРТИР</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ ДОМОВ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ДИЗАЙН</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПОРТФОЛИО</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОНТАКТЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПАРТНЕРАМ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">БЛОГ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <div class="footer__phone-wrap">
+            <span class="footer__phone-label">Звоните пн-пт: 9-18</span>
+            <a href="tel:88000000000" class="footer__phone">8-000-000-00-00</a>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="social social--tg" aria-label="Telegram">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#telegram" />
+              </svg>
+            </a>
+            <a href="#" class="social social--wa" aria-label="WhatsApp">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+            <a href="#" class="social social--vb" aria-label="Viber">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#viber" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__address">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>г. Самара, улица Садовая, 291</span>
+          </div>
+          <button class="btn-reset footer__btn">ЗАПИСАТЬСЯ НА ЗАМЕР</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">ИНН 0000000000/КПП 0000000</div>
+      <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      <div class="footer__company">© Компания K5</div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

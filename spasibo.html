@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__left">
+          <a href="/" class="logo">
+            <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+          </a>
+          <div class="header__location">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Самара</span>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__contacts">
+            <div class="header__phone-wrap">
+              <span class="header__phone-label">Звоните пн-пт: 9-18</span>
+              <a href="tel:88000000000" class="header__phone"
+                >8-000-000-00-00</a
+              >
+            </div>
+            <div class="header__socials">
+              <a href="#" class="social social--tg" aria-label="Telegram">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#telegram" />
+                </svg>
+              </a>
+              <a href="#" class="social social--wa" aria-label="WhatsApp">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#whatsapp" />
+                </svg>
+              </a>
+              <a href="#" class="social social--vb" aria-label="Viber">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#viber" />
+                </svg>
+              </a>
+            </div>
+            <a href="#callback" class="header__callback">ПЕРЕЗВОНИТЕ МНЕ</a>
+          </div>
+          <!-- <button class="burger btn-reset" aria-label="Меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__nav">
+    <div class="container">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link--active"
+            >РЕМОНТ <span class="nav__plus">+</span></a
+          >
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">ДИЗАЙН</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПОРТФОЛИО</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПАРТНЁРАМ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">БЛОГ</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <main class="main">
+      <section class="thanks-page">
+
+        <div class="container">
+          <div class="thanks-page__inner">
+
+            <h1 class="thanks-page__title">Спасибо!</h1>
+            <p class="thanks-page__sub">Ваша заявка принята</p>
+            <p class="thanks-page__desc">
+              Мы свяжемся с вами в течение 15 минут.<br />
+              Пока можете посмотреть наши реализованные проекты.
+            </p>
+            <div class="thanks-page__btns">
+              <a href="index.html" class="thanks-page__btn thanks-page__btn--primary">
+                Вернуться на главную
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <a href="/" class="logo footer__logo">
+          <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list list-reset">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ КВАРТИР</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ ДОМОВ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ДИЗАЙН</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПОРТФОЛИО</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОНТАКТЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПАРТНЕРАМ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">БЛОГ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <div class="footer__phone-wrap">
+            <span class="footer__phone-label">Звоните пн-пт: 9-18</span>
+            <a href="tel:88000000000" class="footer__phone">8-000-000-00-00</a>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="social social--tg" aria-label="Telegram">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#telegram" />
+              </svg>
+            </a>
+            <a href="#" class="social social--wa" aria-label="WhatsApp">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+            <a href="#" class="social social--vb" aria-label="Viber">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#viber" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__address">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>г. Самара, улица Садовая, 291</span>
+          </div>
+          <button class="btn-reset footer__btn">ЗАПИСАТЬСЯ НА ЗАМЕР</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">ИНН 0000000000/КПП 0000000</div>
+      <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      <div class="footer__company">© Компания K5</div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

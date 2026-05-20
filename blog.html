@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__left">
+          <a href="/" class="logo">
+            <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+          </a>
+          <div class="header__location">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Самара</span>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__contacts">
+            <div class="header__phone-wrap">
+              <span class="header__phone-label">Звоните пн-пт: 9-18</span>
+              <a href="tel:88000000000" class="header__phone"
+                >8-000-000-00-00</a
+              >
+            </div>
+            <div class="header__socials">
+              <a href="#" class="social social--tg" aria-label="Telegram">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#telegram" />
+                </svg>
+              </a>
+              <a href="#" class="social social--wa" aria-label="WhatsApp">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#whatsapp" />
+                </svg>
+              </a>
+              <a href="#" class="social social--vb" aria-label="Viber">
+                <svg class="icon-socials">
+                  <use href="./img/sprite.svg#viber" />
+                </svg>
+              </a>
+            </div>
+            <a href="#callback" class="header__callback">ПЕРЕЗВОНИТЕ МНЕ</a>
+          </div>
+          <!-- <button class="burger btn-reset" aria-label="Меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__nav">
+    <div class="container">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link--active"
+            >РЕМОНТ <span class="nav__plus">+</span></a
+          >
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">ДИЗАЙН</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПОРТФОЛИО</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ПАРТНЁРАМ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">БЛОГ</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <main class="main">
+      <section class="blog-hero">
+  <div class="blog-hero__bg">
+    <img src="img/blog/hero-bg.jpg" alt="" />
+    <div class="blog-hero__overlay"></div>
+  </div>
+
+  <div class="blog-hero__blueprint" aria-hidden="true">
+    <img src="img/blog/blueprint.svg" alt="" />
+  </div>
+
+  <div class="container">
+    <div class="blog-hero__inner">
+      <p class="blog-hero__breadcrumb">
+        <a href="index.html">Главная</a> / Блог
+      </p>
+      <h1 class="blog-hero__title">Узнай всё о ремонте</h1>
+      <a href="#" class="blog-hero__btn">Начать сотрудничество</a>
+    </div>
+  </div>
+</section>
+
+      <section class="blog-grid">
+  <div class="container">
+    <div class="blog-grid__list">
+
+      <!-- Ряд 1: 3 равных карточки -->
+      <div class="blog-grid__row blog-grid__row--three">
+        <article class="blog-card">
+          <a href="#" class="blog-card__link" aria-label="Читать статью"></a>
+          <div class="blog-card__img">
+            <img src="img/blog/post-1.jpg" alt="Сантехника" />
+            <div class="blog-card__overlay"></div>
+            <span class="blog-card__read" aria-hidden="true">Читать</span>
+          </div>
+          <div class="blog-card__body">
+            <time class="blog-card__date" datetime="2026-01-01">01.01.2026</time>
+            <h2 class="blog-card__title">Название статьи максимально в пару строк, не расписывать</h2>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <a href="#" class="blog-card__link" aria-label="Читать статью"></a>
+          <div class="blog-card__img">
+            <img src="img/blog/post-2.jpg" alt="Электрика" />
+            <div class="blog-card__overlay"></div>
+            <span class="blog-card__read" aria-hidden="true">Читать</span>
+          </div>
+          <div class="blog-card__body">
+            <time class="blog-card__date" datetime="2026-01-01">01.01.2026</time>
+            <h2 class="blog-card__title">Название статьи максимально в пару строк, не расписывать</h2>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <a href="#" class="blog-card__link" aria-label="Читать статью"></a>
+          <div class="blog-card__img">
+            <img src="img/blog/post-3.jpg" alt="Кухня" />
+            <div class="blog-card__overlay"></div>
+            <span class="blog-card__read" aria-hidden="true">Читать</span>
+          </div>
+          <div class="blog-card__body">
+            <time class="blog-card__date" datetime="2026-01-01">01.01.2026</time>
+            <h2 class="blog-card__title">Название статьи максимально в пару строк, не расписывать</h2>
+          </div>
+        </article>
+      </div>
+
+      <!-- Ряд 2: 1 широкая карточка -->
+      <div class="blog-grid__row blog-grid__row--one">
+        <article class="blog-card blog-card--wide">
+          <a href="#" class="blog-card__link" aria-label="Читать статью"></a>
+          <div class="blog-card__img">
+            <img src="img/blog/post-4.jpg" alt="Ремонт" />
+            <div class="blog-card__overlay"></div>
+            <span class="blog-card__read" aria-hidden="true">Читать</span>
+          </div>
+          <div class="blog-card__body">
+            <time class="blog-card__date" datetime="2026-01-01">01.01.2026</time>
+            <h2 class="blog-card__title">Название статьи максимально в пару строк, не расписывать</h2>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container">
+    <div class="reviews__top">
+      <h2 class="title__section">
+        Отзывы<br />
+        <span>про нашу работу</span>
+      </h2>
+      <a href="#" class="reviews__leave-btn">ОСТАВИТЬ ОТЗЫВ</a>
+    </div>
+
+    <!-- Video reviews -->
+    <div class="reviews__video-list">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-1.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-2.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-3.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="reviews__video-item" data-fancybox="reviews-video">
+        <div class="reviews__video-thumb">
+          <img src="img/reviews/video-4.jpg" alt="Видеоотзыв" />
+          <div class="reviews__video-overlay"></div>
+          <button class="reviews__play" aria-label="Смотреть отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="#182023" />
+            </svg>
+          </button>
+        </div>
+      </a>
+    </div>
+
+    <!-- Ratings bar -->
+    <div class="reviews__ratings">
+      <div class="reviews__ratings-left">
+        <span class="reviews__ratings-label">Все отзывы</span>
+        <div class="reviews__rating-item">
+          <svg class="reviews__yandex-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#FC3F1D"/>
+            <text x="12" y="16" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Я</text>
+          </svg>
+          <div class="reviews__stars">
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+          </div>
+          <span class="reviews__score">4.8</span>
+        </div>
+        <div class="reviews__rating-item">
+          <svg class="reviews__google-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#fff"/>
+            <text x="12" y="16" text-anchor="middle" fill="#4285F4" font-size="12" font-weight="bold">G</text>
+          </svg>
+          <div class="reviews__stars">
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+          </div>
+          <span class="reviews__score">4.9</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text reviews -->
+    <div class="reviews__text-list">
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">А</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Анатолий X.</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">4 мая 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Отдельный вопрос для размещения отзывов на сайте обязательно нужно. Главный переход от сайта к платформе для просмотра отзывов.</p>
+        <span class="reviews__platform">Отзыв от Яндекс</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">О</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Олеся B.</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">2 мая 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Хороший вариант с отзывами. Сами обновляются по всей платформе и на сайте отдельно обновить.</p>
+        <span class="reviews__platform">Отзыв от Google</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar">А</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Алла Макарова</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">29 апр 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Самый лучший сервис!</p>
+        <span class="reviews__platform">Отзыв от Яндекс</span>
+      </div>
+
+      <div class="reviews__text-item">
+        <div class="reviews__text-header">
+          <div class="reviews__avatar reviews__avatar--purple">D</div>
+          <div class="reviews__author-info">
+            <p class="reviews__author-name">Dmitry Igoshin</p>
+            <div class="reviews__stars reviews__stars--sm">
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+              <svg width="12" height="12" viewBox="0 0 14 14"><polygon points="7,1 8.8,5.5 14,5.5 9.8,8.5 11.6,13 7,10.2 2.4,13 4.2,8.5 0,5.5 5.2,5.5" fill="#63e293"/></svg>
+            </div>
+            <span class="reviews__date">18 мар 2025</span>
+          </div>
+        </div>
+        <p class="reviews__text">Отличный вариант! Именно то, что надо. Много источников отзывов. Дизайн адаптивный.</p>
+        <span class="reviews__platform">Отзыв от Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="calc-form">
+  <div class="calc-form__decor" aria-hidden="true">
+    <div class="calc-form__hex calc-form__hex--1"></div>
+    <div class="calc-form__hex calc-form__hex--2"></div>
+    <div class="calc-form__hex calc-form__hex--3"></div>
+  </div>
+
+  <div class="container">
+    <div class="calc-form__inner">
+      <h2 class="calc-form__title">
+        Просчитаем точную стоимость проекта<br />
+        <span>и зафиксируем цену</span>
+      </h2>
+
+      <form class="calc-form__form" action="#" method="post">
+        <div class="calc-form__row calc-form__row--top">
+          <!-- Нужен ли дизайн-проект -->
+          <div class="calc-form__group">
+            <p class="calc-form__label">Нужен ли дизайн-проект?</p>
+            <div class="calc-form__toggle">
+              <label class="calc-form__toggle-item">
+                <input type="radio" name="design" value="yes" checked />
+                <span>Да</span>
+              </label>
+              <label class="calc-form__toggle-item">
+                <input type="radio" name="design" value="no" />
+                <span>Без проекта</span>
+              </label>
+              <label class="calc-form__toggle-item">
+                <input type="radio" name="design" value="has" />
+                <span>Проект есть</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Площадь -->
+          <div class="calc-form__group">
+            <p class="calc-form__label">Площадь помещения</p>
+            <div class="calc-form__area">
+              <button type="button" class="calc-form__area-btn js-area-minus" aria-label="Уменьшить">−</button>
+              <span class="calc-form__area-val"><span class="js-area-val">40</span> м²</span>
+              <button type="button" class="calc-form__area-btn js-area-plus" aria-label="Увеличить">+</button>
+              <input type="hidden" name="area" class="js-area-input" value="40" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Тип ремонта -->
+        <div class="calc-form__row">
+          <div class="calc-form__group calc-form__group--full">
+            <div class="calc-form__select-wrap">
+              <select class="calc-form__select" name="repair_type">
+                <option value="" disabled selected>Тип ремонта</option>
+                <option value="chernovoy">Черновой ремонт</option>
+                <option value="kosmeticheskiy">Косметический ремонт</option>
+                <option value="kapitalnyy">Капитальный ремонт</option>
+                <option value="dizaynerskiy">Дизайнерский ремонт</option>
+              </select>
+              <span class="calc-form__select-arrow">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1l6 6 6-6" stroke="#63e293" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Имя, телефон, кнопка -->
+        <div class="calc-form__row calc-form__row--bottom">
+          <input class="calc-form__input" type="text" name="name" placeholder="Имя*" />
+          <input class="calc-form__input" type="tel" name="phone" placeholder="Телефон*" />
+          <button class="calc-form__submit" type="submit">Получить стоимость</button>
+        </div>
+
+        <label class="calc-form__agree">
+          <input type="checkbox" checked />
+          <span>Отправляя форму на данном сайте, вы даёте согласие на обработку и хранение персональных данных</span>
+        </label>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <a href="/" class="logo footer__logo">
+          <img src="img/logo.svg" alt="СОТА" width="120" height="32" />
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list list-reset">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ КВАРТИР</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">РЕМОНТ ДОМОВ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ДИЗАЙН</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПОРТФОЛИО</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">КОНТАКТЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">ПАРТНЕРАМ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">БЛОГ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <div class="footer__phone-wrap">
+            <span class="footer__phone-label">Звоните пн-пт: 9-18</span>
+            <a href="tel:88000000000" class="footer__phone">8-000-000-00-00</a>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="social social--tg" aria-label="Telegram">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#telegram" />
+              </svg>
+            </a>
+            <a href="#" class="social social--wa" aria-label="WhatsApp">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+            <a href="#" class="social social--vb" aria-label="Viber">
+              <svg class="icon-socials">
+                <use href="./img/sprite.svg#viber" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__address">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#63E293"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>г. Самара, улица Садовая, 291</span>
+          </div>
+          <button class="btn-reset footer__btn">ЗАПИСАТЬСЯ НА ЗАМЕР</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">ИНН 0000000000/КПП 0000000</div>
+      <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      <div class="footer__company">© Компания K5</div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
