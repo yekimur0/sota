@@ -7526,4 +7526,16 @@ html.with-fancybox body.hide-scrollbar {
     gap: 20px 12px;
   }
 }
+
+.text-16 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--seryy);
+}
+.format {
+  position: relative;
+  z-index: 4;
+}
 /*# sourceMappingURL=main.css.map */
